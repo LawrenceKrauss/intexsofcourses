@@ -27,7 +27,7 @@ class Main {
                     numberToPrint = Math.min(size - rowIndex, size - columnIndex);
                 }
 
-                System.out.printf("%0,2d ", numberToPrint);
+                System.out.printf("%0,2d,", numberToPrint);
             }
             System.out.println();
         }
@@ -58,7 +58,7 @@ class Main {
             for (int j = 0; j < size; j++) {
                 System.out.printf("%0," + (size * size + "").length() + "d ", snakeMatrix[i][j]);
             }
-            System.out.println();
+            System.out.printf("%0," + (size * size + "").length() + "d\n", snakeMatrix[i][size - 1]);
         }
     }
 
