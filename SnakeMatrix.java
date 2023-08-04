@@ -18,10 +18,9 @@ public class SnakeMatrix implements IntegerMatrix {
                     matrix[rowIndex + direction[0]][columnIndex + direction[1]] != 0){ // змея стукнулась в себя
                 turnRight(direction);
             }
-            if(matrix[rowIndex + direction[0]][columnIndex + direction[1]] == 0){
-                rowIndex += direction[0];
-                columnIndex += direction[1];
-            }
+
+            rowIndex += direction[0];
+            columnIndex += direction[1];
         }
     }
 
